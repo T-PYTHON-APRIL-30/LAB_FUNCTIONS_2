@@ -1,0 +1,19 @@
+
+# check: the type of the parameter is string
+# separates the word at any capital letter and replace it with a small letter
+# ex: "helloWorldThere" Output: hello world there
+def modified_string(word:str) -> str:
+    new_word:str = ""
+    for i in range(len(word)):
+        if word[i].isupper():
+             new_word += " " + word[i].lower()
+        else:
+            new_word += word[i]
+    return new_word.strip()
+
+# input from the user
+print("separates the word at any capital letter and replace it with a small letter")
+words = input("enter the words: ")
+
+# call the function modified_string and return the new modified string
+print(modified_string(words))
