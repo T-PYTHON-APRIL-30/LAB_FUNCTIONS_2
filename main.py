@@ -23,6 +23,7 @@ import math
 
 
 def find_primes(start: int, end: int) -> str:
+    '''find all primes number from start to end and return it as string'''
     if start > end:
         temp = start
         start = end
@@ -57,3 +58,17 @@ Example: `helloWorldThere` should return :
 ```hello world there```
 
 '''
+def split(sentence:str) -> str:
+    '''if word of sentence to gather we will split and return string new sentence'''
+    if sentence.isalpha():
+        new_sentence =""
+        for char in sentence:
+            if char.isupper():
+                new_sentence += " "
+            new_sentence += char
+    return new_sentence
+
+
+print(split("helloWorldThere"))
+
+
