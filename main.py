@@ -12,15 +12,19 @@ for example, primes between 25 and 50 are:
 43   
 47   
 '''
+def find_primes(num1 :int, num2 :int):
+    '''Function takes in two parameters of type int, and print the prime numbers between the first parameter and the second parameter.'''
+    print("-"*60)
+    print("\nFinding Prime Numbers Between two Values\n")
+    print("-"*60)
 
-print("-"*60)
-print("\nFinding Prime Numbers Between two Values\n")
-print("-"*60)
-first_number = int(input("Enter the first number: "))
-second_number = int(input("Enter the second number: "))
-for number in range(first_number,second_number+1):
+    for number in range(num1,num2+1):
         for i in range (2, number):
             if number % i  == 0:
                 break
         else:
             print(number)
+
+first_number = int(input("Enter the first number: "))
+second_number = int(input("Enter the second number: "))
+print(find_primes(first_number, second_number))
