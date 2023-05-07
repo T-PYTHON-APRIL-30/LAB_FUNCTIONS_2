@@ -14,4 +14,4 @@ def find_primes(number1 : int, number2 : int):
 
 
 print("the prime numbers between 25 to 50 are:")
-find_primes(0, 100)
+find_primes(25, 50)
