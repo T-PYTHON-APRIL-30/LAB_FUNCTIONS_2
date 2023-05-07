@@ -65,6 +65,7 @@ def split(sentence:str) -> str:
         for char in sentence:
             if char.isupper():
                 new_sentence += " "
+                char = char.lower()
             new_sentence += char
     return new_sentence
 
