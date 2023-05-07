@@ -8,19 +8,17 @@
 Example: `helloWorldThere` should return :
 ```hello world there```
 '''
-import re
-sentence= input("Enter your sentence:")
 
 def string_checked (sentence:str):
-    for i in range(len(sentence)):
+    result=""
+    for i in range(0,len(sentence),1):
         if type(sentence)==str:
-            if (sentence[i].isupper()):
-                sentence= re.sub(r'\B(?=[A-Z])', r' ', sentence)
-                break      
-    else:
-        print("This is not a string sentence, pleas try agein")
-    
-    return sentence
+            if sentence[i].isupper()== True:
+                new_char= " "+ sentence[i].lower()
+                result += new_char      
+            else:
+                result += sentence[i]
+    return result
 
-print(string_checked(sentence))
+print(string_checked("helloWorldThere"))
 
