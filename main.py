@@ -27,4 +27,4 @@ def find_primes(num1 :int, num2 :int):
 
 first_number = int(input("Enter the first number: "))
 second_number = int(input("Enter the second number: "))
-print(find_primes(first_number, second_number))
+find_primes(first_number, second_number)
