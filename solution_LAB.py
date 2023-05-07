@@ -1,18 +1,20 @@
-def PrimeNumbers(number1:int,number2:int) -> int:
-    # the auction for the prime number 
-    for number in range(number1, number2 + 1) :
-        for i in range(2, number) :
-         if (number % i) == 0 :
-            break
-         else :
-             print(number)
-             
- #First number input 
-number1 = int(input ("Please Enter the Fisrt Number: ")) 
- #seond number input
-number2 = int(input ("Please Enter the Second Number: "))
-# the print_line 
-print (f"The Prime Numbers between {number1} and {number2} are: ")
-#calling funcation
-PrimeNumbers(number1, number2)
+def Prime_input(frist_number:int,second_number:int):
+    '''This function takes 2 parameters, and print the prime numbers between the first number and the second number'''
+    if frist_number > second_number:
+        switch = frist_number
+        frist_number=second_number
+        second_number=switch
+    print(f"primes between {frist_number} and {second_number} are:")
+    flag=False
+    for number in range(frist_number,second_number):
+        for i in range(2,number):
+            if (number%i) == 0 :
+                flag= True
+        if flag:   
+            flag = False
+        else:
+            print(number)
 
+user_input1 = int(input("Please enter the first number: "))
+user_input2 =int(input("Please inter the second number: "))
+Prime_input(user_input1,user_input2)
