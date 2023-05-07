@@ -25,10 +25,19 @@ def PrimeNum(prNum1:int,prNum2:int)->int:
                        print(Number,len)
                  else:
                        print("this is not prime number, sorry try again")
-while True:
-    print("please give me your first prime number:")
-    prNum1 =int(input())
-    print("please give me your secound prime number:")
-    prNum2 =int(input())    
-    PrimeNum(25,50)
+
+print("please give me your first prime number:")
+prNum1 =int(input())
+print("please give me your secound prime number:")
+prNum2 =int(input())    
+PrimeNum(25,50)
+'''Bonus
+write a function that takes a string as a parameter
+first check that the type of the parameter is of type str
+then, it should separates the word at any capital letter and replace it with a small letter
+and should return the new modified string !
+Example: helloWorldThere should return : hello world there'''
+def ReadStr(string:str)->str:
+       ReadStr().I
+       
          
