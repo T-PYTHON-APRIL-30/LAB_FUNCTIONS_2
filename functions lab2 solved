@@ -14,7 +14,7 @@ for num in range(25, 51):
 
 
 str = "helloWorlrThere"
-if str.islower
+if str.islower():
   print(str)
 else:
   print(str.lower())
