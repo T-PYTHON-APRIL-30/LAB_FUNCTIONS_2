@@ -1,0 +1,21 @@
+#create a function : find_primes that takes in 2 parameters of type int 
+#,and print the prime numbers between the first parameter and the second parameter .
+
+for num in range(25, 51):
+  if num > 1:
+    for i in range(2, num):
+      if (num % i) ==0:
+        break
+      else:
+        print(num)
+
+#bounce:
+#write a function that takes a string as a parameter
+
+
+str = "helloWorlrThere"
+if str.islower():
+  print(str)
+else:
+  print(str.lower())
+  
